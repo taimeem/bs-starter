@@ -1,0 +1,240 @@
+
+body {
+    background-color: #dedede;
+    font-family: 'Roboto', arial !important;
+    text-transform: uppercase;
+}
+.main-h1 {
+  font-size: 16px;
+  border-bottom: 1px solid #ddd;
+  color: #444244;
+  padding: 5px 0px;
+  margin-bottom: 15px;
+  margin-top: 5px;
+}
+.topbar {
+	background: #2A3F54;
+	border-color: #2A3F54;
+	border-radius: 0px;
+}
+.form-control {
+  border-radius: 0px !important;
+  color: #000 !important;
+}
+.error {
+  color: #ff0202 !important;
+font-size: 11px;
+text-transform: capitalize;
+font-weight: normal;
+}
+.a-cust {
+  padding: 10px !important;
+  margin: 0px 10px 10px 10px !important;
+  font-size: 12px !important;
+  background: #effdef !important;
+  color: #27b90e !important;
+}
+.form-group {
+  height: 65px;
+}
+.form-control:focus {
+  border-color: #9B26AF !important;
+  box-shadow: none !important;
+}
+.btn-success {
+    color: #fff;
+    background-color: #af51bf !important;
+    border-color: #af51bf !important;
+}
+.btn-warning {
+    color: #736868 !important;
+    background-color: #f8f8f8 !important;
+    border-color: #c1bfbd !important;
+}
+.btn {
+  border-radius: 0px !important;
+}
+label {
+    color: #6d6a6d;
+    font-size: 12px;
+}
+.topbar .navbar-header a {
+	color: #9b26af;
+}
+
+.wrapper {
+    padding-left: 0px;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.sidebar {
+    z-index: 1000;
+    position: fixed;
+    top: 50px;
+    left: -50px;
+    width: 50px;
+    height: 100%;
+    overflow-y: auto;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#9b26af+0,a577ad+22,950dad+100 */
+    background: rgb(155,38,175); /* Old browsers */
+    background: -moz-linear-gradient(45deg, rgb(155,38,175) 0%, rgb(165,119,173) 22%, rgb(149,13,173) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(45deg, rgb(155,38,175) 0%,rgb(165,119,173) 22%,rgb(149,13,173) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(45deg, rgb(155,38,175) 0%,rgb(165,119,173) 22%,rgb(149,13,173) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9b26af', endColorstr='#950dad',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+	color: #ffffff;
+	-webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.main {
+	width: 100%;
+    position: relative;
+    padding-bottom:20px;
+}
+
+.wrapper.toggled {
+	padding-left: 50px;
+}
+
+.wrapper.toggled .sidebar {
+	left: 0;
+}
+
+/* Sidebar Styles */
+
+.sidebar-nav {
+    position: absolute;
+    top: 52px;
+    width: 50px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.sidebar-nav li {
+    line-height: 40px;
+
+}
+.sidebar-nav li a {
+    display: block;
+    text-decoration: none;
+    color: #e8e8e8;
+    padding: 0;
+    text-align:center;
+}
+
+.sidebar-nav li a:hover, .sidebar-nav li.active a {
+    text-decoration: none;
+    color: #fff;
+    background: #fff;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+    text-decoration: none;
+}
+
+.sidebar-nav li span, .subbar li span {
+	display : none;
+}
+
+nav.subbar {
+	position: relative;
+	width: 100%;
+	border-radius: 0px;
+	background: #fff;
+	margin: 50px 0 -50px 0;
+	padding: 10px 0 0 0;
+	z-index: 2;
+}
+nav.subbar > ul.nav.nav-tabs {
+	padding: 0 5px;
+}
+
+nav.subbar > ul.nav.nav-tabs > li.active > a {
+    background: #dedede;
+    border-top: 1px solid #a6a6a6;
+    border-left: 1px solid #a6a6a6;
+    border-right: 1px solid #a6a6a6;
+    border-radius: 0px;
+}
+
+.content {
+    margin-top: 70px;
+    padding: 0 30px;
+}
+
+
+@media(min-width:768px){
+	.subbar li span {
+		display: inline;
+	}
+}
+
+@media(min-width:992px) {
+    .wrapper {
+    	padding-left: 50px;
+    }
+
+    .sidebar {
+    	left: 0;
+    	width: 50px;
+	}
+
+	.wrapper.toggled {
+		padding-left: 200px;
+	}
+
+	.wrapper.toggled .sidebar, .wrapper.toggled .sidebar-nav {
+		width: 200px;
+	}
+
+	.wrapper.toggled .sidebar-nav li a {
+		text-align: left;
+		padding: 0 0 0 10px;
+	}
+
+	.wrapper.toggled .sidebar-nav li span {
+		display: inline;
+    font-size: 13px;
+	}
+
+}
+
+.navbar-btn {
+    background: none;
+    border: none;
+    height: 35px;
+    min-width: 35px;
+    color: #fff;
+}
+.navbar-text {
+  margin-top: 14px;
+  margin-bottom: 14px;
+}
+@media (min-width: 768px) {
+  .navbar-text {
+    float: left;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+}
+.navbar-default .navbar-brand {
+  color:  #7a1ea1 !important;
+}
+
+.navbar-default {
+  background-color: #ffffff;
+    border-color: #bdbdbd;
+}
+.sidebar-toggle i {
+  font-size: 16px;
+  margin-top: 1px;
+  color: #909090;
+  margin-left: 20px;
+}

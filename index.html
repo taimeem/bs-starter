@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Demo</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Main css file -->
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+        <!-- Animate -->
+        <link rel="stylesheet" href="css/vendor/animate/animate.css">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="css/vendor/font-awesome/css/font-awesome.css">
+        <!--touch-slider css  -->
+        <link rel="stylesheet" href="js/vendor/touch-slider/bootstrap-touch-slider.css">
+        <!--font  -->
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <!-- modernizr-js -->
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    </head>
+    <body>
+      <link href="http://fontawesome.io/assets/font-awesome/css/font-awesome.css" rel="stylesheet" media="screen">
+
+  <nav class="navbar navbar-default navbar-fixed-top topbar">
+  <div class="container-fluid">
+
+    <div class="navbar-header">
+
+      <a href="#" class="navbar-brand">
+        <span class="visible-xs logo-lg">KL</span>
+        <span class="hidden-xs logo-lg">Kpr groups & CO. ltd</span>
+      </a>
+
+      <p class="navbar-text">
+        <a href="#" class="sidebar-toggle">
+                      <i class="fa fa-bars"></i>
+                  </a>
+      </p>
+
+    </div>
+
+    <div class="navbar-collapse collapse" id="navbar-collapse-main">
+
+      <ul class="nav navbar-nav navbar-right">
+
+                  <li>
+                      <button class="navbar-btn">
+                          <i class="fa fa-bell"></i>
+                      </button>
+                  </li>
+
+        <li class="dropdown">
+          <button class="navbar-btn" data-toggle="dropdown">
+            <span style="color:#000">Admin</span>
+          </button>
+          <ul class="dropdown-menu">
+            <li><a href="#">Account</a></li>
+            <li><a href="#">Dashboard</a></li>
+            <li class="nav-divider"></li>
+            <li><a href="#">Logout</a></li>
+          </ul>
+        </li>
+
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+<article class="wrapper">
+
+    <aside class="sidebar">
+        <ul class="sidebar-nav">
+        <li class="active"><a href="#dashboard" data-toggle="tab"><i class="fa fa-dashboard"></i> <span>Dashboard</span></a></li>
+        <li><a href="#configuration" data-toggle="tab"><i class="fa fa-cogs"></i> <span>Configuration</span></a></li>
+        <li><a href="#users" data-toggle="tab"><i class="fa fa-users"></i> <span>Users</span></a></li>
+        <li><a href="#mail" data-toggle="tab"><i class="fa fa-envelope"></i> <span>Mail</span></a></li>
+      </ul>
+    </aside>
+
+    <section class="main">
+        <section class="tab-content">
+           <section class="tab-pane active fade in content" id="dashboard">
+              <div class="row">
+                  <div class="col-xs-12">
+                        <h1 class="main-h1">User registration form</h1>
+                  </div>
+                  <div class="reg-from col-md-12 col-x-s12" style="padding:0px;">
+                    <div class="alert alert-success a-cust hidden">
+                      You Have Registered! Please verify your Email.
+                      </div>
+                 <form id="form" >
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                  <div class="form-group">
+                    <label for="">Name</label>
+                    <input type="text" class="form-control"  name="name"  id="name" placeholder="Name">
+                  </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                  <div class="form-group">
+                    <label for="">Email</label>
+                    <input type="text" class="form-control"  name="email"  id="email"  placeholder="Email">
+                  </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                  <div class="form-group">
+                    <label for="">Password</label>
+                    <input type="password" class="form-control" name="password"  id="password"  placeholder="Password">
+                  </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                  <div class="form-group">
+                    <label for="">Age</label>
+                    <input type="text" class="form-control"  placeholder="Age">
+                  </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                  <div class="form-group">
+                    <label for="">Date of Birth</label>
+                    <input type="text" class="form-control"  placeholder="Age">
+                  </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                  <div class="form-group">
+                    <label for="">Mobile</label>
+                    <input type="text" class="form-control"  placeholder="Age">
+                  </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                  <div class="form-group">
+                    <label for="">Url</label>
+                    <input type="text" class="form-control"  placeholder="Age">
+                  </div>
+                </div>
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                <button type="submit" name="button" class="btn btn-success">Submit</button>
+                <button type="button" name="button" class="btn btn-warning">Cancel</button>
+                </div>
+
+            </form>
+                </div>
+
+            </div>
+           </section>
+           <section class="tab-pane fade" id="configuration">
+
+           </section>
+
+           <section class="tab-pane fade" id="users">
+
+           </section>
+
+           <section class="tab-pane fade" id="mail">
+
+           </section>
+
+        </section>
+    </section>
+
+</article>
+        <script src="jquery/jquery-3.1.1.min.js"></script>
+        <script src="bootstrap/js/bootstrap.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/vendor/touch-slider/bootstrap-touch-slider.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.18/jquery.touchSwipe.min.js"></script>
+        <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.0/jquery.validate.min.js" charset="utf-8"></script>
+        <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.0/additional-methods.js" charset="utf-8"></script>
+        <script type="text/javascript">
+          $(document).ready(function() {
+            $(document).ready(function () {
+    $("#form").validate({
+        rules: {
+            "name": {
+                required: true,
+                minlength: 5
+            },
+            "email": {
+                required: true,
+                email: true
+            },
+            "password": {
+                required: true,
+                minlength: 8
+            }
+        },
+        messages: {
+            "name": {
+                required: "Please, enter a name"
+            },
+            "email": {
+                required: "Please, enter an email",
+                email: "Email is invalid"
+            },
+            "password": {
+                required: "Please, enter an password",
+            }
+        },
+        submitHandler: function (form) { // for demo
+            $('#form').fadeOut(150);
+            $('.a-cust').removeClass('hidden');
+            return false; // for demo
+        }
+    });
+});
+});
+        </script>
+    </body>
+</html>
